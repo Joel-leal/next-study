@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['Painel', 'Projetos', 'equipe'];
 
 const NavLink = ({ children }) => (
   <Link
@@ -67,7 +67,7 @@ export default function withAction() {
               size={'sm'}
               mr={4}
               leftIcon={<AddIcon />}>
-              Action
+              Atividades
             </Button>
             <Menu>
               <MenuButton
@@ -84,10 +84,10 @@ export default function withAction() {
                 />
               </MenuButton>
               <MenuList>
-                <MenuItem>Link 1</MenuItem>
-                <MenuItem>Link 2</MenuItem>
+                <MenuItem>Perfil</MenuItem>
+                <MenuItem>configurações</MenuItem>
                 <MenuDivider />
-                <MenuItem>Link 3</MenuItem>
+                <MenuItem>Sair</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
@@ -103,8 +103,6 @@ export default function withAction() {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
     </>
   );
 }
