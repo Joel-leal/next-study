@@ -34,10 +34,12 @@ const NavLink = ({ children }) => (
 );
 
 export default function withAction() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
+       {/* eslint-disable-next-line react-hooks/rules-of-hooks */}
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton

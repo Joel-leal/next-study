@@ -1,12 +1,14 @@
 {
-  "name": "next-router",
+  "name": "next-study",
+  "homepage": "https://Joel-leal.github.io/next-study",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "yarn build && npx gh-pages -d out"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
